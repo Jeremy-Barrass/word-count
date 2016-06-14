@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCount", "WordCount\WordCount.csproj", "{E708946B-CD31-4A0F-8D66-84B9C6A864A8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountLibrary", "WordCountLibrary\WordCountLibrary.csproj", "{B851BC68-71FD-49AE-AFF1-DC20B01333CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountTest", "WordCountTest\WordCountTest.csproj", "{A212FA9C-4B32-47A6-BFC9-2CD99C71D7F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x86 = Debug|x86
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{A212FA9C-4B32-47A6-BFC9-2CD99C71D7F8}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A212FA9C-4B32-47A6-BFC9-2CD99C71D7F8}.Debug|x86.Build.0 = Debug|Any CPU
+		{A212FA9C-4B32-47A6-BFC9-2CD99C71D7F8}.Release|x86.ActiveCfg = Release|Any CPU
+		{A212FA9C-4B32-47A6-BFC9-2CD99C71D7F8}.Release|x86.Build.0 = Release|Any CPU
+		{B851BC68-71FD-49AE-AFF1-DC20B01333CF}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{B851BC68-71FD-49AE-AFF1-DC20B01333CF}.Debug|x86.Build.0 = Debug|Any CPU
+		{B851BC68-71FD-49AE-AFF1-DC20B01333CF}.Release|x86.ActiveCfg = Release|Any CPU
+		{B851BC68-71FD-49AE-AFF1-DC20B01333CF}.Release|x86.Build.0 = Release|Any CPU
+		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Debug|x86.ActiveCfg = Debug|x86
+		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Debug|x86.Build.0 = Debug|x86
+		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Release|x86.ActiveCfg = Release|x86
+		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+EndGlobal

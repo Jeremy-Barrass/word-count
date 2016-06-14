@@ -1,0 +1,5 @@
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCountLibrary/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCountLibrary/bin/Debug/WordCountLibrary.dll.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCountLibrary/bin/Debug/WordCountLibrary.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCountLibrary/obj/Debug/WordCountLibrary.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCountLibrary/obj/Debug/WordCountLibrary.dll.mdb
