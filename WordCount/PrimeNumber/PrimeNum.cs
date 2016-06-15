@@ -6,7 +6,21 @@ namespace PrimeNumber
 	{
 		public bool PrimeCheck (int value)
 		{
-			return true;
+			bool isPrime = false;
+			if (TestDivisors (value) < 3) {
+				isPrime = true;
+			}
+			return isPrime;
+		}
+
+		private int TestDivisors(int num) {
+			int count = 0;
+			for (int x = 1; x <= num; x++) {
+				if (num % x == 0) {
+					count++;
+				}
+			}
+			return count;
 		}
 	}
 }

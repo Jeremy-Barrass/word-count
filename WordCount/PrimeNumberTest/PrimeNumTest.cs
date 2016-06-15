@@ -15,8 +15,13 @@ namespace PrimeNumberTest
 		}
 
 		[Test]
-		public void ThePrimeCheckMethodReturnsABoolean(){
+		public void ThePrimeCheckMethodReturnsTrueWhenTheNumberIsPrime(){
 			Assert.That (pn.PrimeCheck (7), Is.True);
+		}
+
+		[Test]
+		public void ThePrimeCheckMethodReturnsFalseWhenTheNumberIsNotPrime() {
+			Assert.That (pn.PrimeCheck (9), Is.False);
 		}
 	}
 }

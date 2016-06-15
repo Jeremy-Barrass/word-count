@@ -41,7 +41,7 @@ namespace WordCountLibrary
 			int count = 0;
 			foreach (string word in wordsArray) {
 				if (w == word) {
-					count += 1;
+					count ++;
 				}
 			}
 			return count;
