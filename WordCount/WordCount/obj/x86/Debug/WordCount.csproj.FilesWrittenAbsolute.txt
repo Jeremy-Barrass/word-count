@@ -7,3 +7,7 @@
 /home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCountTest.dll.mdb
 /home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCountLibrary.dll
 /home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCountLibrary.dll.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/PrimeNumber.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/PrimeNumber.dll.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/PrimeNumberTest.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/PrimeNumberTest.dll.mdb

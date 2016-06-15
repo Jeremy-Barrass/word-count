@@ -1,6 +1,8 @@
 ﻿using System;
 using WordCountLibrary;
 using WordCountTest;
+using PrimeNumber;
+using PrimeNumberTest;
 
 namespace WordCount
 {
@@ -9,6 +11,7 @@ namespace WordCount
 		public static void Main (string[] args)
 		{
 			WordCounter wc = new WordCounter();
+
 		}
 	}
 }

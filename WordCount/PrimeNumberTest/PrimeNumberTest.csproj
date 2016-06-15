@@ -2,14 +2,14 @@
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
-    <ProjectGuid>{E708946B-CD31-4A0F-8D66-84B9C6A864A8}</ProjectGuid>
-    <OutputType>Exe</OutputType>
-    <RootNamespace>WordCount</RootNamespace>
-    <AssemblyName>WordCount</AssemblyName>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CCF096B6-B006-495B-BD80-1CA2E1BDD294}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>PrimeNumberTest</RootNamespace>
+    <AssemblyName>PrimeNumberTest</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -17,42 +17,34 @@
     <DefineConstants>DEBUG;</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Externalconsole>true</Externalconsole>
-    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release</OutputPath>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
-    <Externalconsole>true</Externalconsole>
-    <PlatformTarget>x86</PlatformTarget>
+    <ConsolePause>false</ConsolePause>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="nunit.framework, Version=2.6.4.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <Package>nunit</Package>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="WCRunner.cs" />
+    <Compile Include="PrimeNumTest.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\WordCountTest\WordCountTest.csproj">
-      <Project>{A212FA9C-4B32-47A6-BFC9-2CD99C71D7F8}</Project>
-      <Name>WordCountTest</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\WordCountLibrary\WordCountLibrary.csproj">
-      <Project>{B851BC68-71FD-49AE-AFF1-DC20B01333CF}</Project>
-      <Name>WordCountLibrary</Name>
-    </ProjectReference>
     <ProjectReference Include="..\PrimeNumber\PrimeNumber.csproj">
       <Project>{EB197FE5-6499-4BF9-9CEB-38DCD23E7843}</Project>
       <Name>PrimeNumber</Name>
     </ProjectReference>
-    <ProjectReference Include="..\PrimeNumberTest\PrimeNumberTest.csproj">
-      <Project>{CCF096B6-B006-495B-BD80-1CA2E1BDD294}</Project>
-      <Name>PrimeNumberTest</Name>
-    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
 </Project>

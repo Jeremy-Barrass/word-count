@@ -7,6 +7,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountLibrary", "WordCou
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WordCountTest", "WordCountTest\WordCountTest.csproj", "{A212FA9C-4B32-47A6-BFC9-2CD99C71D7F8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumber", "PrimeNumber\PrimeNumber.csproj", "{EB197FE5-6499-4BF9-9CEB-38DCD23E7843}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PrimeNumberTest", "PrimeNumberTest\PrimeNumberTest.csproj", "{CCF096B6-B006-495B-BD80-1CA2E1BDD294}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -21,9 +25,17 @@ Global
 		{B851BC68-71FD-49AE-AFF1-DC20B01333CF}.Debug|x86.Build.0 = Debug|Any CPU
 		{B851BC68-71FD-49AE-AFF1-DC20B01333CF}.Release|x86.ActiveCfg = Release|Any CPU
 		{B851BC68-71FD-49AE-AFF1-DC20B01333CF}.Release|x86.Build.0 = Release|Any CPU
+		{CCF096B6-B006-495B-BD80-1CA2E1BDD294}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{CCF096B6-B006-495B-BD80-1CA2E1BDD294}.Debug|x86.Build.0 = Debug|Any CPU
+		{CCF096B6-B006-495B-BD80-1CA2E1BDD294}.Release|x86.ActiveCfg = Release|Any CPU
+		{CCF096B6-B006-495B-BD80-1CA2E1BDD294}.Release|x86.Build.0 = Release|Any CPU
 		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Debug|x86.ActiveCfg = Debug|x86
 		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Debug|x86.Build.0 = Debug|x86
 		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Release|x86.ActiveCfg = Release|x86
 		{E708946B-CD31-4A0F-8D66-84B9C6A864A8}.Release|x86.Build.0 = Release|x86
+		{EB197FE5-6499-4BF9-9CEB-38DCD23E7843}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{EB197FE5-6499-4BF9-9CEB-38DCD23E7843}.Debug|x86.Build.0 = Debug|Any CPU
+		{EB197FE5-6499-4BF9-9CEB-38DCD23E7843}.Release|x86.ActiveCfg = Release|Any CPU
+		{EB197FE5-6499-4BF9-9CEB-38DCD23E7843}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

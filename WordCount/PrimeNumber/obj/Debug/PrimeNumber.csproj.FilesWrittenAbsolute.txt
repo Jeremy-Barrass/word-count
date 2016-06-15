@@ -1,0 +1,5 @@
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/PrimeNumber/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/PrimeNumber/bin/Debug/PrimeNumber.dll.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/PrimeNumber/bin/Debug/PrimeNumber.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/PrimeNumber/obj/Debug/PrimeNumber.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/PrimeNumber/obj/Debug/PrimeNumber.dll.mdb
