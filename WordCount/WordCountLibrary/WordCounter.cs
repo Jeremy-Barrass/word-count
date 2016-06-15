@@ -19,6 +19,10 @@ namespace WordCountLibrary
 		public Dictionary<string,int> WordList {
 			get {return wordList;}
 		}
+
+		public void Count(string words) {
+			
+		}
 	}
 }
 

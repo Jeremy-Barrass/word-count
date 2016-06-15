@@ -12,7 +12,15 @@ namespace WordCount
 
 			WCTest wctest = new WCTest ();
 
+			wctest.BeforeEach ();
+
 			wctest.ItHasAList ();
+
+//			wctest.wordMaker ();
+
+			wctest.ItCountsWords ();
+
+			wctest.ItAddsWordsToTheList ();
 		}
 	}
 }
