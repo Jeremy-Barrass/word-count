@@ -19,6 +19,7 @@ namespace WordCountTest
 		public void BeforeEach() {
 			wc = new WordCounter();
 			testWords = "The quick brown fox jumps over the lazy dog.";
+			wc.setWordsArray (testWords);
 		}
 			
 	 	[Test]
@@ -29,13 +30,13 @@ namespace WordCountTest
 
 		[Test]
 		public void ItCountsWords() {
-			wc.Count (testWords);
-			Assert.That (wc.WordList ["The"], Is.EqualTo (2));
+			wc.CountWords(wc.getWordsArray());
+			Assert.That (wc.WordList ["the"], Is.EqualTo (2));
 		}
 
 		[Test]
 		public void ItAddsWordsToTheList() {
-			wc.Count (testWords);
+			wc.CountWords(wc.getWordsArray());
 			Assert.That (wc.WordList.Count, Is.GreaterThan (0));
 		}
 	}
