@@ -1,12 +1,23 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Collections.Specialized;
+using System.Collections.Concurrent;
 
 namespace WordCountLibrary
 {
 	public class WordCounter
 	{
-		public void MyClass ()
+		private Dictionary<string,int> wordList;
+
+		public WordCounter ()
 		{
+			wordList = new Dictionary<string,int> ();
+		}
+
+		public Dictionary<string,int> WordList {
+			get {return wordList;}
 		}
 	}
 }

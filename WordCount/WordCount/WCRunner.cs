@@ -12,7 +12,7 @@ namespace WordCount
 
 			WCTest wctest = new WCTest ();
 
-
+			wctest.ItHasAList ();
 		}
 	}
 }

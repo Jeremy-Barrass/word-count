@@ -1,0 +1,9 @@
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/obj/x86/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCount.exe.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCount.exe
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/obj/x86/Debug/WordCount.exe
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/obj/x86/Debug/WordCount.exe.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCountTest.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCountTest.dll.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCountLibrary.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WordCount/bin/Debug/WordCountLibrary.dll.mdb
