@@ -39,6 +39,14 @@ namespace WordCountTest
 			wc.CountWords(wc.getWordsArray());
 			Assert.That (wc.WordList.Count, Is.GreaterThan (0));
 		}
+
+		[Test]
+		public void ItRemovesPunctuation() {
+			testWords = "Hello.  I am Don-Juan!!  What, may I ask,  is your name?";
+			wc.setWordsArray (testWords);
+			wc.CountWords (wc.getWordsArray());
+			Assert.That (wc.WordList.ContainsKey ("Juan"));
+		}
 	}
 }
 
