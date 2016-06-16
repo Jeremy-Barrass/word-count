@@ -1,5 +1,6 @@
 
-# Word Counter in C-Sharp # #### (Forgot how markdown works for a moment there.)
+# Word Counter in C-Sharp
+#### (Forgot how markdown works for a moment there.)
 
 ## Initial Design Ideas
 
