@@ -19,8 +19,8 @@ namespace WordCount
 			try {
 				using  (StreamReader sr = new StreamReader(wcr.getFilePath())) {
 					file = sr.ReadToEnd();
-					wc.setWordsArray (file);
-					wc.CountWords (wc.getWordsArray ());
+					wc.SetWordsArray (file);
+					wc.CountWords (wc.GetWordsArray ());
 
 					foreach (string key in wc.WordList.Keys) {
 						Console.WriteLine ("The word '{0}' appears {1} times, which {2} a prime number.", key, wc.WordList [key], pn.PrimeCheck (wc.WordList [key]) ? "is" : "is not");

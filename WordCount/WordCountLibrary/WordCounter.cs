@@ -18,16 +18,14 @@ namespace WordCountLibrary
 			wordList = new Dictionary<string,int> ();
 		}
 
-		public void setWordsArray(string words) {
-			string cr = "\r\n";
-			string replace = " ";
-			Regex rgx = new Regex (cr);
-			words = rgx.Replace (words, replace);
+		public void SetWordsArray(string words) {
+			string newWords = RemoveCarriageReturns (words);
 			char delimiter = ' ';
 			wordsArray = words.ToLower().Split (delimiter);
+			wordsArray = RemovePunctuation (wordsArray);
 		}
 
-		public string[] getWordsArray() {
+		public string[] GetWordsArray() {
 			return wordsArray;
 		}
 
@@ -49,6 +47,24 @@ namespace WordCountLibrary
 				}
 			}
 			return count;
+		}
+
+		private string RemoveCarriageReturns (string oldWords) {
+			string cr = "\r\n";
+			string replace = " ";
+			Regex rgx = new Regex (cr);
+			string newWords = rgx.Replace (oldWords, replace);
+			return newWords;
+		}
+
+		private string[] RemovePunctuation (string[] wAry){
+			string punct = "\\b\\.|\\b\\W+";
+			string replace = String.Empty;
+			Regex rgx = new Regex (punct);
+			foreach (string word in wAry) {
+				rgx.Replace (word, replace);
+			}
+			return wAry;
 		}
 	}
 }
