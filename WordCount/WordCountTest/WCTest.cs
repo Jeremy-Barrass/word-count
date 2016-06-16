@@ -53,7 +53,10 @@ namespace WordCountTest
 			testWords = "Hello.\nMy name is...";
 			wc.SetWordsArray (testWords);
 			wc.CountWords (wc.GetWordsArray ());
-			Assert.That (!wc.WordList.ContainsKey ("Hello.\nMy"));
+			foreach (string key in wc.WordList.Keys) {
+				Console.WriteLine (key);
+			}
+			Assert.That (!wc.WordList.ContainsKey ("hello.\nmy"));
 		}
 	}
 }
