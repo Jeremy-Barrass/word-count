@@ -47,6 +47,16 @@ namespace WordCountTest
 			wc.CountWords (wc.getWordsArray());
 			Assert.That (wc.WordList.ContainsKey ("Juan"));
 		}
+
+		[Test]
+		public void ItRemovesCarriageReturns() {
+			testWords = "Hello.  " +
+			"My name is...";
+			wc.setWordsArray (testWords);
+			wc.CountWords (wc.getWordsArray ());
+			Assert.That (!wc.WordList.ContainsKey ("Hello.  " +
+			"My name is..."));
+		}
 	}
 }
 

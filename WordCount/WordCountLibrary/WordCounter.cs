@@ -19,6 +19,10 @@ namespace WordCountLibrary
 		}
 
 		public void setWordsArray(string words) {
+			string cr = "\r\n";
+			string replace = " ";
+			Regex rgx = new Regex (cr);
+			words = rgx.Replace (words, replace);
 			char delimiter = ' ';
 			wordsArray = words.ToLower().Split (delimiter);
 		}
