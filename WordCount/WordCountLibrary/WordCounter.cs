@@ -19,10 +19,10 @@ namespace WordCountLibrary
 		}
 
 		public void SetWordsArray(string words) {
-			string newWords = RemoveCarriageReturns (words);
+			words = RemoveCarriageReturns (words);
+			words = RemovePunctuation (words);
 			char delimiter = ' ';
-			wordsArray = newWords.ToLower().Split (delimiter);
-			wordsArray = RemovePunctuation (wordsArray);
+			wordsArray = words.ToLower().Split (delimiter);
 		}
 
 		public string[] GetWordsArray() {
@@ -57,16 +57,14 @@ namespace WordCountLibrary
 			return newWords;
 		}
 
-		private string[] RemovePunctuation (string[] wAry){
-			string punct = "\\b\\.|\\b\\W+";
+		private string RemovePunctuation (string oldWords){
+			string punct = "\\W[^\\s'A-Za-z0-9]|\\,|\\-|\\?|\\.";
 			string replace = String.Empty;
 			Regex rgx = new Regex (punct);
-			foreach (string word in wAry) {
-				Console.WriteLine ("Before: {0}", word); 
-				rgx.Replace (word, replace);
-				Console.WriteLine ("After: {0}", word); 
-			}
-			return wAry;
+			Console.WriteLine ("Before: {0}", oldWords); 
+			string newWords = rgx.Replace (oldWords, replace);
+			Console.WriteLine ("After: {0}", newWords); 
+			return newWords;
 		}
 	}
 }
