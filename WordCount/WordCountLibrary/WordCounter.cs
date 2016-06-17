@@ -16,7 +16,7 @@ namespace WordCountLibrary
 		public WordCounter ()
 		{
 			wordList = new Dictionary<string,int> ();
-			wordsSearchList = new List<string> ();
+			wordsSearchList = new List<string>();
 		}
 
 		public void SetWordsSearchList(string words) {
@@ -47,7 +47,6 @@ namespace WordCountLibrary
 					count ++;
 				}
 			}
-
 			return count;
 		}
 

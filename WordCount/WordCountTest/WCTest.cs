@@ -30,7 +30,7 @@ namespace WordCountTest
 
 		[Test]
 		public void ItCountsWords() {
-			wc.CountWords(wc.GetWordsSearchList());
+			wc.CountWords (wc.GetWordsSearchList ());
 			Assert.That (wc.WordList ["the"], Is.EqualTo (2));
 		}
 
@@ -53,17 +53,8 @@ namespace WordCountTest
 			testWords = "Hello.\nMy name\nis...";
 			wc.SetWordsSearchList (testWords);
 			wc.CountWords (wc.GetWordsSearchList ());
-			foreach (string key in wc.WordList.Keys) {
-				Console.WriteLine (key);
-			}
 			Assert.That (!wc.WordList.ContainsKey ("hello.\nmy"));
 			Assert.That (!wc.WordList.ContainsKey ("name\nis"));
-		}
-
-		[Test]
-		public void ItDeletesWordsFromTheWordsArrayAsItCountsThem() {
-			wc.CountWords (wc.GetWordsSearchList ());
-			Assert.That(wc.GetWordsSearchList().Count, Is.EqualTo(0));
 		}
 	}
 }
