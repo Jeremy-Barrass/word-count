@@ -45,7 +45,7 @@ namespace WordCountTest
 			testWords = "Hello.  I am Don-Juan!!  What, may I ask,  is your name?";
 			wc.SetWordsSearchList (testWords);
 			wc.CountWords (wc.GetWordsSearchList());
-			Assert.That (wc.WordList.ContainsKey ("donjuan"));
+			Assert.That (wc.WordList.ContainsKey ("juan"));
 		}
 
 		[Test]

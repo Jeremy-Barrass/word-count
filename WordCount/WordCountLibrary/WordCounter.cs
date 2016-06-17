@@ -37,8 +37,7 @@ namespace WordCountLibrary
 
 		public void CountWords(List<string> wordsSearchList) {
 			while (wordsSearchList.Count > 0) {
-				int x = wordsSearchList.Count;
-				string word = wordsSearchList [x-1];
+				string word = wordsSearchList [0];
 				if (!wordList.ContainsKey (word)) {
 					wordList[word] = Count(word);
 					SetMarkedWord(word);
@@ -75,7 +74,7 @@ namespace WordCountLibrary
 
 		private string RemovePunctuation (string oldWords){
 			string punct = "\\W[^\\s'A-Za-z0-9]|\\,|\\-|\\?|\\.";
-			string replace = String.Empty;
+			string replace = " ";
 			Regex rgx = new Regex (punct);
 			string newWords = rgx.Replace (oldWords, replace);
 			return newWords;
