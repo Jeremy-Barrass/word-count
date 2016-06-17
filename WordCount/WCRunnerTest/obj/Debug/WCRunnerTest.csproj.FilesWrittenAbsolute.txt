@@ -1,0 +1,8 @@
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/obj/Debug/.NETFramework,Version=v4.5.AssemblyAttribute.cs
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/bin/Debug/nunit.framework.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/bin/Debug/WordCount.exe
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/bin/Debug/WordCount.exe.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/bin/Debug/WordCountLibrary.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/bin/Debug/WordCountLibrary.dll.mdb
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/bin/Debug/PrimeNumber.dll
+/home/jeremy/Dropbox/Github/CTM-tech-test/WordCount/WCRunnerTest/bin/Debug/PrimeNumber.dll.mdb
