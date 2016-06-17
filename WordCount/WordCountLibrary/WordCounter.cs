@@ -46,6 +46,7 @@ namespace WordCountLibrary
 					count ++;
 				}
 			}
+
 			return count;
 		}
 
@@ -61,9 +62,7 @@ namespace WordCountLibrary
 			string punct = "\\W[^\\s'A-Za-z0-9]|\\,|\\-|\\?|\\.";
 			string replace = String.Empty;
 			Regex rgx = new Regex (punct);
-			Console.WriteLine ("Before: {0}", oldWords); 
 			string newWords = rgx.Replace (oldWords, replace);
-			Console.WriteLine ("After: {0}", newWords); 
 			return newWords;
 		}
 	}

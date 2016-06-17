@@ -59,6 +59,12 @@ namespace WordCountTest
 			Assert.That (!wc.WordList.ContainsKey ("hello.\nmy"));
 			Assert.That (!wc.WordList.ContainsKey ("name\nis"));
 		}
+
+		[Test]
+		public void ItDeletesWordsFromTheWordsArrayAsItCountsThem() {
+			wc.CountWords (wc.GetWordsArray ());
+			Assert.That(wc.GetWordsArray().GetLength(0), Is.EqualTo(0));
+		}
 	}
 }
 
