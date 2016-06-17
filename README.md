@@ -15,7 +15,7 @@ I briefly wondered if it was worth setting up a web socket to get files with, bu
 The response time is much improved now that reducing the size of the Search List as it searches has been implemented.  I would be happy to submit this as a final version, however, I will continue to work on test driving the refactoring of WCRunner until 17:00.
 
 ##### 16:57 update
-Unfortunately, WCRunner.cs had a protected in the solution, which I meant I could not test it effectively - not without extracting everything to a whole new library.  Time was pressing so I elected to refactor without testing and check it manual run, which was successful.
+Unfortunately, WCRunner.cs had a protected status in the solution, which I meant I could not test it effectively - not without extracting everything to a whole new library.  Time was pressing so I elected to refactor without testing and checked it via a manual run instead, which was successful.
 
 ## Final thoughts
 
