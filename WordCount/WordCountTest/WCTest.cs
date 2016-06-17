@@ -50,13 +50,14 @@ namespace WordCountTest
 
 		[Test]
 		public void ItRemovesCarriageReturns() {
-			testWords = "Hello.\nMy name is...";
+			testWords = "Hello.\nMy name\nis...";
 			wc.SetWordsArray (testWords);
 			wc.CountWords (wc.GetWordsArray ());
 			foreach (string key in wc.WordList.Keys) {
 				Console.WriteLine (key);
 			}
 			Assert.That (!wc.WordList.ContainsKey ("hello.\nmy"));
+			Assert.That (!wc.WordList.ContainsKey ("name\nis"));
 		}
 	}
 }

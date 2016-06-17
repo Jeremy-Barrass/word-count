@@ -21,7 +21,7 @@ namespace WordCountLibrary
 		public void SetWordsArray(string words) {
 			string newWords = RemoveCarriageReturns (words);
 			char delimiter = ' ';
-			wordsArray = words.ToLower().Split (delimiter);
+			wordsArray = newWords.ToLower().Split (delimiter);
 			wordsArray = RemovePunctuation (wordsArray);
 		}
 
@@ -50,7 +50,7 @@ namespace WordCountLibrary
 		}
 
 		private string RemoveCarriageReturns (string oldWords) {
-			string cr = "\r\n";
+			string cr = "\\r|\\n";
 			string replace = " ";
 			Regex rgx = new Regex (cr);
 			string newWords = rgx.Replace (oldWords, replace);
@@ -62,7 +62,9 @@ namespace WordCountLibrary
 			string replace = String.Empty;
 			Regex rgx = new Regex (punct);
 			foreach (string word in wAry) {
+				Console.WriteLine ("Before: {0}", word); 
 				rgx.Replace (word, replace);
+				Console.WriteLine ("After: {0}", word); 
 			}
 			return wAry;
 		}
