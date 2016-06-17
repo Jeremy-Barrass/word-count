@@ -12,6 +12,7 @@ namespace WordCountLibrary
 	{
 		private List<string> wordsSearchList;
 		private Dictionary<string,int> wordList;
+		private string markedWord;
 
 		public WordCounter ()
 		{
@@ -35,9 +36,23 @@ namespace WordCountLibrary
 		}
 
 		public void CountWords(List<string> wordsSearchList) {
-			foreach(string word in wordsSearchList) {
-				wordList[word] = Count(word);
+			while (wordsSearchList.Count > 0) {
+				int x = wordsSearchList.Count;
+				string word = wordsSearchList [x-1];
+				if (!wordList.ContainsKey (word)) {
+					wordList[word] = Count(word);
+					SetMarkedWord(word);
+				}
+				wordsSearchList.RemoveAll(DeleteMarkedWord);
 			}
+		}
+
+		private void SetMarkedWord(string word) {
+			markedWord = word;
+		}
+
+		private bool DeleteMarkedWord(string word) {
+			return word.Equals (markedWord);
 		}
 
 		private int Count(string w) {
