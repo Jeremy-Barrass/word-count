@@ -19,7 +19,7 @@ namespace WordCountTest
 		public void BeforeEach() {
 			wc = new WordCounter();
 			testWords = "The quick brown fox jumps over the lazy dog.";
-			wc.SetWordsArray (testWords);
+			wc.SetWordsSearchList (testWords);
 		}
 			
 	 	[Test]
@@ -30,29 +30,29 @@ namespace WordCountTest
 
 		[Test]
 		public void ItCountsWords() {
-			wc.CountWords(wc.GetWordsArray());
+			wc.CountWords(wc.GetWordsSearchList());
 			Assert.That (wc.WordList ["the"], Is.EqualTo (2));
 		}
 
 		[Test]
 		public void ItAddsWordsToTheList() {
-			wc.CountWords(wc.GetWordsArray());
+			wc.CountWords(wc.GetWordsSearchList());
 			Assert.That (wc.WordList.Count, Is.GreaterThan (0));
 		}
 
 		[Test]
 		public void ItRemovesPunctuation() {
 			testWords = "Hello.  I am Don-Juan!!  What, may I ask,  is your name?";
-			wc.SetWordsArray (testWords);
-			wc.CountWords (wc.GetWordsArray());
+			wc.SetWordsSearchList (testWords);
+			wc.CountWords (wc.GetWordsSearchList());
 			Assert.That (wc.WordList.ContainsKey ("donjuan"));
 		}
 
 		[Test]
 		public void ItRemovesCarriageReturns() {
 			testWords = "Hello.\nMy name\nis...";
-			wc.SetWordsArray (testWords);
-			wc.CountWords (wc.GetWordsArray ());
+			wc.SetWordsSearchList (testWords);
+			wc.CountWords (wc.GetWordsSearchList ());
 			foreach (string key in wc.WordList.Keys) {
 				Console.WriteLine (key);
 			}
@@ -62,8 +62,8 @@ namespace WordCountTest
 
 		[Test]
 		public void ItDeletesWordsFromTheWordsArrayAsItCountsThem() {
-			wc.CountWords (wc.GetWordsArray ());
-			Assert.That(wc.GetWordsArray().GetLength(0), Is.EqualTo(0));
+			wc.CountWords (wc.GetWordsSearchList ());
+			Assert.That(wc.GetWordsSearchList().Count, Is.EqualTo(0));
 		}
 	}
 }

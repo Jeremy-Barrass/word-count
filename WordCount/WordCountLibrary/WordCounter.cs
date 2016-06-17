@@ -10,38 +10,39 @@ namespace WordCountLibrary
 {
 	public class WordCounter
 	{
-		private string[] wordsArray;
+		private List<string> wordsSearchList;
 		private Dictionary<string,int> wordList;
 
 		public WordCounter ()
 		{
 			wordList = new Dictionary<string,int> ();
+			wordsSearchList = new List<string> ();
 		}
 
-		public void SetWordsArray(string words) {
+		public void SetWordsSearchList(string words) {
 			words = RemoveCarriageReturns (words);
 			words = RemovePunctuation (words);
 			char delimiter = ' ';
-			wordsArray = words.ToLower().Split (delimiter);
+			wordsSearchList.AddRange(words.ToLower().Split (delimiter));
 		}
 
-		public string[] GetWordsArray() {
-			return wordsArray;
+		public List<string> GetWordsSearchList() {
+			return wordsSearchList;
 		}
 
 		public Dictionary<string,int> WordList {
 			get {return wordList;}
 		}
 
-		public void CountWords(string[] wordsArray) {
-			foreach(string word in wordsArray) {
+		public void CountWords(List<string> wordsSearchList) {
+			foreach(string word in wordsSearchList) {
 				wordList[word] = Count(word);
 			}
 		}
 
 		private int Count(string w) {
 			int count = 0;
-			foreach (string word in wordsArray) {
+			foreach (string word in wordsSearchList) {
 				if (w == word) {
 					count ++;
 				}
