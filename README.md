@@ -14,6 +14,13 @@ I briefly wondered if it was worth setting up a web socket to get files with, bu
 
 The response time is much improved now that reducing the size of the Search List as it searches has been implemented.  I would be happy to submit this as a final version, however, I will continue to work on test driving the refactoring of WCRunner until 17:00.
 
+##### 16:57 update
+Unfortunately, WCRunner.cs had a protected in the solution, which I meant I could not test it effectively - not without extracting everything to a whole new library.  Time was pressing so I elected to refactor without testing and check it manual run, which was successful.
+
+## Final thoughts
+
+This was an interesting challenge and has taught me a lot about how the C-Sharp language works.  It is a shame I did not get the opportunity to run mocks or stubs in my testing, which test driving the refactor of my main class runner would have given me.  I expect there will ample opportunity to learn more about stubbing and mocking in Nunit on the job, however - should I receive an offer.
+
 ### Previous iteration(16/06/16)
 
 It's response time is very slow.  I'm wondering if I could change things to improve it.  There are parts of the word counter which need refactoring and I would like to add some additional parsing logic to get rid of carriage returns and punctuation in the text, which annoy me and look sloppy.  They would also stop so many 'words' appearing once and there might even be a few that get pushed into double digits as a result.
