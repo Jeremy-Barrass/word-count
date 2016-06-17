@@ -10,7 +10,11 @@ I considered putting the Dictionary to hold the counted words in its own data-on
 
 I briefly wondered if it was worth setting up a web socket to get files with, but this wasn't in the spec, so I haven't.  Having set up a stream reader for reading local files, however, I suspect this would not be difficult to do.
 
-## Current Working App (16/06/16)
+## Current Working App (17/06/16)
+
+The response time is much improved now that reducing the size of the Search List as it searches has been implemented.  I would be happy to submit this as a final version, however, I will continue to work on test driving the refactoring of WCRunner until 17:00.
+
+### Previous iteration(16/06/16)
 
 It's response time is very slow.  I'm wondering if I could change things to improve it.  There are parts of the word counter which need refactoring and I would like to add some additional parsing logic to get rid of carriage returns and punctuation in the text, which annoy me and look sloppy.  They would also stop so many 'words' appearing once and there might even be a few that get pushed into double digits as a result.
 
